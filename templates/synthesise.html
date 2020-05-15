@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+    <title>Synthesise</title>
+{% endblock %}
+
+{% block body %}
+
+
+    <div class="text-center text-justify mt-3 ">
+                <h1 class="font-weight-normal text-info"> Handwritten Sythesis from Text Online</h1>
+                <p>Convert Text input to Documents of handwriten text image</p>
+    </div>
+
+    <div class="row">
+        <div class="col border">
+              <ol>
+                <li>Click the SELECT FILES button and select jpeg or png images you wish to convert. <br> or Drag and Drop files</li>
+                <li class="text-secondary">Click UPLOAD button to upload image to server . </li>
+                <li class="text-secondary">Use Recognise button to Recognise handwritten text inside uploaded image .</li>
+                <li class="text-secondary">Finally . Generate new Hand written image by clicking generate button .</li>
+              </ol>
+        </div>
+        <div class="col border">
+            hi
+        </div>
+    </div>
+
+
+{% endblock %}
+
+
+
+ {% block navbarblock %}
+
+    <li class="nav-item ">
+        <a class="nav-link" href="{% url 'homepage' %}">Home </a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link active" href="{% url 'synthesise' %}" >Generate from Text <span class="sr-only">(current)</span></a>
+    </li>
+
+{% endblock %}
