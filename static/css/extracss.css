@@ -41,6 +41,17 @@ height : 70%;
 background-color: #F2F3F4;
 }
 
+.drag-input::-webkit-file-upload-button {
+   visibility: hidden;
+        width : 45rem;
+        height : 25.5rem;
+
+       }
+
+input[type='file'] {
+         color: transparent;
+       }
+
 
 
 .drag-area {
@@ -49,7 +60,16 @@ background-color: #F2F3F4;
 
  margin:  1rem 2.5% ;
  width : 95%;
- background-color:;
+
+}
+
+.drag-area-on-drop {
+ border:1.5px dashed black;
+ height : 92%;
+
+ margin:  1rem 2.5% ;
+ width : 95%;
+
 }
 
 
@@ -80,3 +100,44 @@ body {
 #sticky-footer {
   flex-shrink: none;
 }
+
+
+.text-middle-div {
+top:37%;
+left:50%;
+position: absolute;
+transform: translate(-50%, -50%);
+
+}
+
+
+.image-display {
+    display: block;
+    max-width:100%;
+    max-height:100%;
+    width: auto;
+    height: auto;
+
+}
+
+.button-div{
+margin-top:13%;
+
+}
+
+
+.Text-button {
+
+  right: 10%;
+  top: 66%;
+
+}
+.dimage {
+
+margin-right : 7%;
+
+
+
+}
+
+

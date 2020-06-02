@@ -5,6 +5,7 @@
 
 {% block head %}
     <title>Home</title>
+
 {% endblock %}
 
 {% block body %}
@@ -17,21 +18,30 @@
 
     <div class="row">
 
-        <div class="col-sm ">
+        <div class="col-sm container ">
+            <div class="  row ">
             <ol>
                 <li>Click the SELECT FILES button and select jpeg or png images you wish to convert. <br> or Drag and Drop files</li>
-                <li class="text-secondary">Click UPLOAD button to upload image to server . </li>
+
                 <li class="text-secondary">Use Recognise button to Recognise handwritten text inside uploaded image .</li>
                 <li class="text-secondary">Finally . Generate new Hand written image by clicking generate button .</li>
 
             </ol>
+                </div>
         </div>
         <div class="col-sm content-parent ">
-            <div class=" mr-5 content-box-n rounded-lg border" >
-                <div class=" drag-area rounded-lg">
 
-                </div>
+            <div class=" mr-5 content-box-n rounded-lg border" >
+                <form  method="post" name ="myForm"  enctype="multipart/form-data" class=" drag-area rounded-lg " id = "drop-zone" action="preview">
+                    {% csrf_token %}
+
+                   <p class ="font-weight-light text-black-50 text-middle-div text-xl-center"> Choose File <br> or <br> Just drag and drop image here </p>
+
+                  <input type="file" name = "datafilein" class=" drag-input rounded-lg"  onchange="myForm.submit();" >
+
+                </form>
             </div>
+
         </div>
     </div>
 
@@ -47,5 +57,10 @@
     <li class="nav-item">
         <a class="nav-link" href="{% url 'synthesise' %}" >Generate from Text</a>
     </li>
+
+{% endblock %}
+
+{% block bottom-js %}
+    <script src="{% static '/js/extraJs.js' %}"></script>
 
 {% endblock %}

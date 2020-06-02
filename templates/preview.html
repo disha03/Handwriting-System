@@ -1,1 +1,57 @@
 {% extends 'base.html' %}
+
+{% load static %}
+
+{% block head %}
+    <title>Preview</title>
+
+{% endblock %}
+
+ {% block navbarblock %}
+
+    <li class="nav-item active">
+        <a class="nav-link" href="{% url 'homepage' %}">Home <span class="sr-only">(current)</span></a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="{% url 'synthesise' %}" >Generate from Text</a>
+    </li>
+
+{% endblock %}
+
+
+{% block body %}
+
+
+    <div class="text-center text-justify mt-3">
+                <h1 class="font-weight-normal text-info"> Optical Character Recognition (OCR) and Synthesis online</h1>
+                <p>Convert Scanned Documents of handwriten text to another handwriting</p>
+    </div>
+
+
+
+    <div class="row ">
+
+        <div class="col-sm container">
+            <div class="  row ">
+            <ol>
+                <li class="text-secondary">Click the SELECT FILES button and select jpeg or png images you wish to convert. <br> or Drag and Drop files</li>
+
+                <li >Use Recognise button to Recognise handwritten text inside uploaded image .</li>
+                <li class="text-secondary">Finally . Generate new Hand written image by clicking generate button .</li>
+
+            </ol>
+            </div>
+            <div class=" button-div row float-right "> <button type="button" class="btn btn-secondary Text-button " onclick=" location.href = '{% url 'GeneratedText' %}'" >Recognize</button> </div>
+
+
+        </div>
+        <div class="col-sm content-parent ">
+
+            <div class=" mr-5 content-box-n rounded-lg border" >
+               <img src="/static/media/testimage.png" alt="" class = "image-display" >
+            </div>
+
+        </div>
+    </div>
+
+{% endblock %}

@@ -19,5 +19,9 @@ from . import views
 urlpatterns = [
    path('', views.homepage, name='homepage'),
    path('synthesise', views.synthesise, name='synthesise'),
+   path('preview', views.preview, name='preview'),
+   path('GeneratedText', views.GeneratedText, name='GeneratedText'),
+   path('GeneratedImage', views.GeneratedImage, name='GeneratedImage'),
+
 
 ]
