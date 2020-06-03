@@ -1,0 +1,14 @@
+[[06/03/2020 11:52:25 AM]] Internal Server Error: /GeneratedImage
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/Library/Frameworks/Python.framework/Versions/3.6/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/arunbabupt/Desktop/tempo/Handwriting-System-master/main/views.py", line 30, in GeneratedImage
+    testsleep()
+  File "/Users/arunbabupt/Desktop/tempo/Handwriting-System-master/demo.py", line 174, in testsleep
+    hand.write(
+NameError: name 'hand' is not defined
+[[06/03/2020 11:53:20 AM]] /Users/arunbabupt/Desktop/tempo/Handwriting-System-master/demo.py changed, reloading.

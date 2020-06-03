@@ -1,0 +1,2 @@
+[[06/03/2020 11:54:01 AM]] Not Found: /ocr.svg
+[[06/03/2020 11:54:39 AM]] /Users/arunbabupt/Desktop/tempo/Handwriting-System-master/demo.py changed, reloading.

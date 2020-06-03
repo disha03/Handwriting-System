@@ -1,0 +1,1 @@
+[[06/03/2020 11:49:19 AM]] /Users/arunbabupt/Desktop/tempo/Handwriting-System-master/demo.py changed, reloading.
